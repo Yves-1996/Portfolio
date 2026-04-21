@@ -181,9 +181,10 @@ img { display: block; max-width: 100%; }
 h1 {
     font-family: var(--font-head);
     font-weight: 800;
-    line-height: 0.92;
+    line-height: 1.02;
     letter-spacing: -0.04em;
     font-size: clamp(3.2rem, 8vw, 6.5rem);
+    padding-bottom: 0.08em;
 }
 .h1-name { display: block; }
 .accent-line { color: var(--accent); }
