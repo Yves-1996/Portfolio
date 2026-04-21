@@ -3,288 +3,401 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta
-        name="description"
-        content="Portfolio de Yves TANA ASSIGA, développeur informatique avec des projets en IA, data et interfaces web."
-    >
-    <title>Yves TANA ASSIGA | Portfolio</title>
+    <meta name="description" content="Portfolio de Yves TANA ASSIGA — développeur informatique, IA appliquée, interfaces web. Yaoundé, Cameroun.">
+    <title>Yves TANA ASSIGA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Grain overlay -->
+    <div class="grain" aria-hidden="true"></div>
+
     <header class="site-header">
         <nav class="navbar">
-            <a href="#hero" class="logo" aria-label="Accueil">YT<span>.</span></a>
+            <a href="#hero" class="logo" aria-label="Accueil">
+                <span class="logo-yt">YT</span><span class="logo-dot">.</span>
+            </a>
             <ul class="nav-links">
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#about">Profil</a></li>
+                <li><a href="#experience">Parcours</a></li>
                 <li><a href="#skills">Compétences</a></li>
                 <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="nav-cta">Me contacter</a></li>
             </ul>
+            <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span>
+            </button>
         </nav>
     </header>
 
     <main>
+
+        <!-- ─── HERO ──────────────────────────────────────────────── -->
         <section id="hero" class="hero">
-            <div class="hero-copy">
-                <p class="eyebrow">Portfolio</p>
-                <h1>Yves TANA ASSIGA</h1>
-                <p class="hero-role">Développeur informatique</p>
-                <p class="hero-text">
-                    Je m'intéresse surtout aux projets web, à l'IA appliquée et aux outils data.
-                    Ce portfolio regroupe quelques projets en ligne que j'ai effectivement déployés.
-                </p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn">Voir les projets</a>
-                    <a href="mailto:yvestanaassiga@yahoo.fr" class="btn secondary">Me contacter</a>
+            <div class="hero-inner">
+                <div class="hero-left">
+                    <p class="eyebrow mono">// Développeur · IA · Cameroun</p>
+                    <h1>
+                        <span class="h1-name">Yves</span>
+                        <span class="h1-name accent-line">Tana</span>
+                        <span class="h1-name">Assiga</span>
+                    </h1>
+                    <p class="hero-desc">
+                        Je construis des outils qui fonctionnent vraiment —
+                        interfaces web, modèles IA et pipelines de données
+                        déployés en production, pas juste en local.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-primary">Voir les projets</a>
+                        <a href="mailto:yvestanaassiga@yahoo.fr" class="btn-ghost">Email</a>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <div class="stat-block">
+                        <span class="stat-num">10<span class="stat-plus">+</span></span>
+                        <span class="stat-label">Projets déployés</span>
+                    </div>
+                    <div class="stat-block">
+                        <span class="stat-num">990</span>
+                        <span class="stat-label">TOEIC — niveau C1</span>
+                    </div>
+                    <div class="stat-block">
+                        <span class="stat-num">M1</span>
+                        <span class="stat-label">IA & Big Data · 2024</span>
+                    </div>
+                    <div class="hero-location">
+                        <span class="dot-live" aria-hidden="true"></span>
+                        <span class="mono">Yaoundé, Cameroun</span>
+                    </div>
                 </div>
             </div>
 
-            <aside class="hero-panel" aria-label="Résumé professionnel">
-                <div class="panel-card">
-                    <p class="panel-label">Base</p>
-                    <strong>Yaoundé, Cameroun</strong>
+            <div class="hero-ticker" aria-hidden="true">
+                <div class="ticker-track">
+                    <span>Python</span><span>·</span>
+                    <span>Hugging Face</span><span>·</span>
+                    <span>Streamlit</span><span>·</span>
+                    <span>Computer Vision</span><span>·</span>
+                    <span>Deep Learning</span><span>·</span>
+                    <span>Java / J2EE</span><span>·</span>
+                    <span>Git / GitHub</span><span>·</span>
+                    <span>Fine-tuning</span><span>·</span>
+                    <span>Data Science</span><span>·</span>
+                    <span>C++</span><span>·</span>
+                    <span>Python</span><span>·</span>
+                    <span>Hugging Face</span><span>·</span>
+                    <span>Streamlit</span><span>·</span>
+                    <span>Computer Vision</span><span>·</span>
+                    <span>Deep Learning</span><span>·</span>
+                    <span>Java / J2EE</span><span>·</span>
+                    <span>Git / GitHub</span><span>·</span>
+                    <span>Fine-tuning</span><span>·</span>
+                    <span>Data Science</span><span>·</span>
+                    <span>C++</span><span>·</span>
                 </div>
-                <div class="panel-card">
-                    <p class="panel-label">Langues</p>
-                    <strong>Français / Anglais</strong>
-                    <span>TOEIC 990</span>
-                </div>
-                <div class="panel-card">
-                    <p class="panel-label">Actuellement</p>
-                    <strong>Développeur Innovation</strong>
-                    <span>NAUMUR SARL depuis mars 2026</span>
-                </div>
-            </aside>
+            </div>
         </section>
 
-        <section id="about" class="section">
-            <div class="section-heading">
-                <p class="section-kicker">Profil</p>
-                <h2>À propos</h2>
-            </div>
-            <div class="about-grid">
-                <div class="about-card">
-                    <p>
-                        Je cherche à construire des applications simples, utiles et bien présentées,
-                        avec une attention particulière pour l'interface et la clarté d'usage.
-                    </p>
+        <!-- ─── ABOUT ─────────────────────────────────────────────── -->
+        <section id="about" class="section about-section">
+            <div class="section-label mono">01 — Profil</div>
+            <div class="about-layout">
+                <div class="about-headline">
+                    <h2>Développeur avec<br>une obsession<br><em>pour le déploiement</em></h2>
                 </div>
-                <div class="about-card">
+                <div class="about-body">
                     <p>
-                        Mon parcours entre le Cameroun, la France et le Canada m'a donné une
-                        ouverture internationale, mais aussi une façon assez concrète d'aborder les projets.
+                        J'ai fait mes études entre Yaoundé, Grenoble et Limoges. Ce va-et-vient
+                        entre contextes très différents m'a appris à m'adapter vite et à ne pas
+                        supposer que les outils fonctionneront pareil partout.
                     </p>
-                </div>
-                <div class="about-card">
                     <p>
-                        J'aime aller jusqu'au déploiement pour qu'un projet ne reste pas seulement
-                        un exercice de cours ou un prototype local.
+                        Ce qui me distingue : je ne laisse pas les projets mourir en local.
+                        Chaque travail que je fais se retrouve en ligne — sur Hugging Face, sur
+                        Streamlit Cloud — parce qu'un projet qu'on ne peut pas tester ne sert à rien.
                     </p>
+                    <p>
+                        En dehors du code : judo, natation, rugby. Et des jeux vidéo,
+                        qui m'ont appris la logique des systèmes avant même l'université.
+                    </p>
+                    <div class="about-tags">
+                        <span class="tag">Startup Week-End 2018 🏆</span>
+                        <span class="tag">Nuit de l'Info 2019</span>
+                        <span class="tag">Bilingue FR / EN</span>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- ─── EXPERIENCE ────────────────────────────────────────── -->
         <section id="experience" class="section">
-            <div class="section-heading">
-                <p class="section-kicker">Parcours</p>
-                <h2>Expérience & formation</h2>
-            </div>
+            <div class="section-label mono">02 — Parcours</div>
+            <h2 class="section-title">Expérience &amp; formation</h2>
+
             <div class="timeline">
-                <article class="timeline-item">
-                    <span class="timeline-date">Depuis mars 2026</span>
-                    <h3>Développeur au service Innovation - NAUMUR SARL</h3>
+                <div class="tl-item tl-current">
+                    <div class="tl-meta">
+                        <span class="tl-date mono">Mars 2026 → maintenant</span>
+                        <span class="tl-badge">Poste actuel</span>
+                    </div>
+                    <h3>Développeur Innovation — NAUMUR SARL</h3>
                     <p>
-                        Travail sur des interfaces web, l'intégration de contenus multimédia, la
-                        maintenance d'outils existants et quelques usages IA autour de la transcription
-                        et de l'organisation de ressources numériques.
+                        Développement de plateformes web et d'outils IA pour la transcription automatique.
+                        Structuration et mise en ligne de ressources numériques, conception d'interfaces
+                        orientées utilisateur, maintenance et amélioration d'outils existants.
                     </p>
-                </article>
-                <article class="timeline-item">
-                    <span class="timeline-date">2024</span>
-                    <h3>Master 1 Intelligence Artificielle & Big Data</h3>
-                    <p>Keyce Informatique et Intelligence Artificielle, Yaoundé.</p>
-                </article>
-                <article class="timeline-item">
-                    <span class="timeline-date">2021</span>
-                    <h3>Cycle Ingénieur Informatique</h3>
-                    <p>3IL, Limoges.</p>
-                </article>
-            </div>
-        </section>
+                    <div class="tl-stack mono">Python · Web · IA · UX</div>
+                </div>
 
-        <section id="skills" class="section">
-            <div class="section-heading">
-                <p class="section-kicker">Savoir-faire</p>
-                <h2>Compétences techniques</h2>
-            </div>
-            <div class="skills-grid">
-                <article class="skill-card">
-                    <h3>Développement logiciel</h3>
-                    <p>Python, C, C++, C#, Java/J2EE</p>
-                </article>
-                <article class="skill-card">
-                    <h3>UX / UI</h3>
-                    <p>Conception d'interfaces, responsive design, intégration de contenus multimédia</p>
-                </article>
-                <article class="skill-card">
-                    <h3>IA & Data</h3>
-                    <p>Manipulation de datasets, bases de machine learning, essais de fine-tuning</p>
-                </article>
-                <article class="skill-card">
-                    <h3>Déploiement</h3>
-                    <p>Hugging Face Spaces, Streamlit Cloud, Git et GitHub</p>
-                </article>
-            </div>
-        </section>
+                <div class="tl-item">
+                    <div class="tl-meta">
+                        <span class="tl-date mono">2024</span>
+                    </div>
+                    <h3>Master 1 — Intelligence Artificielle & Big Data</h3>
+                    <p>Keyce Informatique et Intelligence Artificielle, Yaoundé. Travaux pratiques intensifs
+                    sur le deep learning, la vision par ordinateur et la manipulation de datasets réels.</p>
+                    <div class="tl-stack mono">Deep Learning · CNN · Transfer Learning · Data</div>
+                </div>
 
-        <section id="projects" class="section">
-            <div class="section-heading">
-                <p class="section-kicker">Selection</p>
-                <h2>Quelques projets en ligne</h2>
-            </div>
-            <div class="projects-grid">
-                <article class="project-card featured">
-                    <p class="project-type">Hugging Face Space</p>
-                    <h3>CC Deaplearning M2</h3>
-                    <p>
-                        Un projet déployé autour du deep learning, réalisé pour présenter un travail
-                        de cours dans une interface accessible en ligne.
-                    </p>
-                    <a
-                        href="https://huggingface.co/spaces/Yves-Tana/CC_Deaplearning_M2"
-                        target="_blank"
-                        rel="noreferrer"
-                        class="project-link"
-                    >
-                        Ouvrir le projet
-                    </a>
-                </article>
+                <div class="tl-item">
+                    <div class="tl-meta">
+                        <span class="tl-date mono">2021</span>
+                    </div>
+                    <h3>Cycle Ingénieur Informatique — 3IL</h3>
+                    <p>Limoges, France. Fondations solides en algorithmique, architecture logicielle et
+                    développement système.</p>
+                    <div class="tl-stack mono">Java · C++ · Architecture · Algo</div>
+                </div>
 
-                <article class="project-card">
-                    <p class="project-type">Hugging Face Space</p>
-                    <h3>CC OpenCV</h3>
-                    <p>
-                        Une petite application autour d'OpenCV et de la vision par ordinateur,
-                        publiée pour pouvoir la tester directement dans le navigateur.
-                    </p>
-                    <a
-                        href="https://huggingface.co/spaces/Yves-Tana/CC_OpenCV"
-                        target="_blank"
-                        rel="noreferrer"
-                        class="project-link"
-                    >
-                        Ouvrir le projet
-                    </a>
-                </article>
-
-                <article class="project-card">
-                    <p class="project-type">Hugging Face Space</p>
-                    <h3>CC Transfer Learning</h3>
-                    <p>
-                        Un projet consacré au transfer learning, avec l'idée de réutiliser un modèle
-                        existant plutôt que repartir de zéro.
-                    </p>
-                    <a
-                        href="https://huggingface.co/spaces/Yves-Tana/CC_Transfer_Learning"
-                        target="_blank"
-                        rel="noreferrer"
-                        class="project-link"
-                    >
-                        Ouvrir le projet
-                    </a>
-                </article>
-
-                <article class="project-card">
-                    <p class="project-type">Hugging Face Space</p>
-                    <h3>DeepLearning CNN CC</h3>
-                    <p>
-                        Un autre projet de cours autour des CNN, mis en ligne pour garder une trace
-                        visible du travail réalisé.
-                    </p>
-                    <a
-                        href="https://huggingface.co/spaces/Yves-Tana/DeepLearning_CNN_CC"
-                        target="_blank"
-                        rel="noreferrer"
-                        class="project-link"
-                    >
-                        Ouvrir le projet
-                    </a>
-                </article>
-
-                <article class="project-card">
-                    <p class="project-type">Hugging Face Space</p>
-                    <h3>Yahoo Finance</h3>
-                    <p>
-                        Un projet plus orienté données, avec une interface simple pour consulter des
-                        informations financières.
-                    </p>
-                    <a
-                        href="https://huggingface.co/spaces/Yves-Tana/Yahoo_finance"
-                        target="_blank"
-                        rel="noreferrer"
-                        class="project-link"
-                    >
-                        Ouvrir le projet
-                    </a>
-                </article>
-
-                <article class="project-card">
-                    <p class="project-type">Hugging Face Space</p>
-                    <h3>Data Bank</h3>
-                    <p>
-                        Un projet de manipulation et de présentation de données, publié sous forme
-                        d'application web.
-                    </p>
-                    <a
-                        href="https://huggingface.co/spaces/Yves-Tana/data_bank"
-                        target="_blank"
-                        rel="noreferrer"
-                        class="project-link"
-                    >
-                        Ouvrir le projet
-                    </a>
-                </article>
-            </div>
-
-            <div class="project-note">
-                <p>
-                    J'ai aussi d'autres Spaces publics visibles sur Hugging Face :
-                    <a href="https://huggingface.co/spaces/Yves-Tana/CC_Machine_Learning_Avance_climat" target="_blank" rel="noreferrer" class="text-link">CC Machine Learning Avance Climat</a>,
-                    <a href="https://huggingface.co/spaces/Yves-Tana/CC_Projet_Tutore" target="_blank" rel="noreferrer" class="text-link">CC Projet Tutore</a>,
-                    <a href="https://huggingface.co/spaces/Yves-Tana/IMC" target="_blank" rel="noreferrer" class="text-link">IMC</a>,
-                    <a href="https://huggingface.co/spaces/Yves-Tana/Map_India_Internet" target="_blank" rel="noreferrer" class="text-link">Map India Internet</a>,
-                    <a href="https://huggingface.co/spaces/Yves-Tana/SN_Machine_Learning" target="_blank" rel="noreferrer" class="text-link">SN Machine Learning</a>,
-                    <a href="https://huggingface.co/spaces/Yves-Tana/Stock_500" target="_blank" rel="noreferrer" class="text-link">Stock 500</a>,
-                    <a href="https://huggingface.co/spaces/Yves-Tana/design_thinking" target="_blank" rel="noreferrer" class="text-link">Design Thinking</a>
-                    et
-                    <a href="https://huggingface.co/spaces/Yves-Tana/diabete" target="_blank" rel="noreferrer" class="text-link">Diabete</a>.
-                </p>
-            </div>
-        </section>
-
-        <section id="contact" class="section contact-section">
-            <div class="section-heading">
-                <p class="section-kicker">Contact</p>
-                <h2>Me contacter</h2>
-            </div>
-            <div class="contact-card">
-                <p>
-                    Si vous souhaitez échanger sur un stage, une collaboration ou simplement voir
-                    d'autres travaux, vous pouvez me contacter ici.
-                </p>
-                <div class="contact-links">
-                    <a href="mailto:yvestanaassiga@yahoo.fr" class="btn">Envoyer un email</a>
-                    <a href="https://huggingface.co/Yves-Tana/spaces" target="_blank" rel="noreferrer" class="text-link">Profil Hugging Face</a>
-                    <a href="https://share.streamlit.io/user/yves-1996" target="_blank" rel="noreferrer" class="text-link">Profil Streamlit</a>
+                <div class="tl-item">
+                    <div class="tl-meta">
+                        <span class="tl-date mono">2018 · 1 mois</span>
+                    </div>
+                    <h3>Assistant Service Siroperie — SABC</h3>
+                    <p>Société Anonyme des Brasseries du Cameroun. Premier contact avec le monde industriel,
+                    observation des systèmes de production à grande échelle.</p>
                 </div>
             </div>
         </section>
+
+        <!-- ─── SKILLS ────────────────────────────────────────────── -->
+        <section id="skills" class="section">
+            <div class="section-label mono">03 — Compétences</div>
+            <h2 class="section-title">Ce que je maîtrise</h2>
+
+            <div class="skills-layout">
+                <div class="skill-area">
+                    <h3 class="skill-area-title">Développement</h3>
+                    <div class="skill-pills">
+                        <span>Python</span><span>C / C++</span><span>C#</span>
+                        <span>Java / J2EE</span><span>HTML / CSS</span>
+                    </div>
+                </div>
+                <div class="skill-area">
+                    <h3 class="skill-area-title">IA & Data Science</h3>
+                    <div class="skill-pills">
+                        <span>Deep Learning</span><span>CNN</span><span>Transfer Learning</span>
+                        <span>Computer Vision</span><span>Fine-tuning</span><span>Datasets</span>
+                    </div>
+                </div>
+                <div class="skill-area">
+                    <h3 class="skill-area-title">Déploiement & UX</h3>
+                    <div class="skill-pills">
+                        <span>Hugging Face Spaces</span><span>Streamlit Cloud</span>
+                        <span>Git / GitHub</span><span>Responsive design</span>
+                        <span>Intégration contenus</span>
+                    </div>
+                </div>
+                <div class="skill-area">
+                    <h3 class="skill-area-title">Langues</h3>
+                    <div class="skill-pills lang-pills">
+                        <span class="lang-pill">Français <em>natif</em></span>
+                        <span class="lang-pill">Anglais <em>C1 · TOEIC 990</em></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── PROJECTS ──────────────────────────────────────────── -->
+        <section id="projects" class="section">
+            <div class="section-label mono">04 — Projets</div>
+            <h2 class="section-title">En ligne &amp; fonctionnels</h2>
+
+            <div class="projects-grid">
+
+                <a href="https://huggingface.co/spaces/Yves-Tana/CC_Deaplearning_M2"
+                   target="_blank" rel="noreferrer"
+                   class="proj-card proj-featured">
+                    <div class="proj-top">
+                        <span class="proj-tag mono">Deep Learning · M2</span>
+                        <span class="proj-arrow">↗</span>
+                    </div>
+                    <h3>Deep Learning M2</h3>
+                    <p>Architecture de réseau de neurones profonds déployée comme interface web interactive.
+                    Résultat d'un projet de cours poussé jusqu'en production.</p>
+                    <div class="proj-foot mono">Hugging Face Space</div>
+                </a>
+
+                <a href="https://huggingface.co/spaces/Yves-Tana/CC_OpenCV"
+                   target="_blank" rel="noreferrer"
+                   class="proj-card">
+                    <div class="proj-top">
+                        <span class="proj-tag mono">Computer Vision</span>
+                        <span class="proj-arrow">↗</span>
+                    </div>
+                    <h3>OpenCV — Vision par ordinateur</h3>
+                    <p>Application de traitement d'image en temps réel, testable directement dans le navigateur.
+                    Détection de contours et manipulation de flux vidéo.</p>
+                    <div class="proj-foot mono">Hugging Face Space</div>
+                </a>
+
+                <a href="https://huggingface.co/spaces/Yves-Tana/CC_Transfer_Learning"
+                   target="_blank" rel="noreferrer"
+                   class="proj-card">
+                    <div class="proj-top">
+                        <span class="proj-tag mono">Transfer Learning</span>
+                        <span class="proj-arrow">↗</span>
+                    </div>
+                    <h3>Transfer Learning</h3>
+                    <p>Réutilisation d'un modèle pré-entraîné adapté à un nouveau contexte.
+                    Démonstration pratique du gain de temps vs entraînement from scratch.</p>
+                    <div class="proj-foot mono">Hugging Face Space</div>
+                </a>
+
+                <a href="https://huggingface.co/spaces/Yves-Tana/Yahoo_finance"
+                   target="_blank" rel="noreferrer"
+                   class="proj-card">
+                    <div class="proj-top">
+                        <span class="proj-tag mono">Data · Finance</span>
+                        <span class="proj-arrow">↗</span>
+                    </div>
+                    <h3>Yahoo Finance Dashboard</h3>
+                    <p>Interface de consultation de données financières en temps réel.
+                    Projet orienté UX avec une attention particulière à la lisibilité des données.</p>
+                    <div class="proj-foot mono">Hugging Face Space</div>
+                </a>
+
+                <a href="https://huggingface.co/spaces/Yves-Tana/CC_Machine_Learning_Avance_climat"
+                   target="_blank" rel="noreferrer"
+                   class="proj-card">
+                    <div class="proj-top">
+                        <span class="proj-tag mono">ML · Climat</span>
+                        <span class="proj-arrow">↗</span>
+                    </div>
+                    <h3>ML Avancé — Données Climat</h3>
+                    <p>Application de modèles de machine learning avancés sur des datasets climatiques réels.
+                    Analyse prédictive et visualisation.</p>
+                    <div class="proj-foot mono">Hugging Face Space</div>
+                </a>
+
+                <a href="https://huggingface.co/spaces/Yves-Tana/diabete"
+                   target="_blank" rel="noreferrer"
+                   class="proj-card">
+                    <div class="proj-top">
+                        <span class="proj-tag mono">Santé · Prédiction</span>
+                        <span class="proj-arrow">↗</span>
+                    </div>
+                    <h3>Prédiction Diabète</h3>
+                    <p>Outil de prédiction médicale basé sur un modèle de classification.
+                    Interface pensée pour être lisible par un non-spécialiste.</p>
+                    <div class="proj-foot mono">Hugging Face Space</div>
+                </a>
+
+            </div>
+
+            <div class="more-projects">
+                <p class="mono">+ autres projets publics :</p>
+                <div class="more-links">
+                    <a href="https://huggingface.co/spaces/Yves-Tana/DeepLearning_CNN_CC" target="_blank" rel="noreferrer">CNN Deep Learning</a>
+                    <a href="https://huggingface.co/spaces/Yves-Tana/data_bank" target="_blank" rel="noreferrer">Data Bank</a>
+                    <a href="https://huggingface.co/spaces/Yves-Tana/IMC" target="_blank" rel="noreferrer">IMC</a>
+                    <a href="https://huggingface.co/spaces/Yves-Tana/Map_India_Internet" target="_blank" rel="noreferrer">Map India Internet</a>
+                    <a href="https://huggingface.co/spaces/Yves-Tana/SN_Machine_Learning" target="_blank" rel="noreferrer">SN Machine Learning</a>
+                    <a href="https://huggingface.co/spaces/Yves-Tana/design_thinking" target="_blank" rel="noreferrer">Design Thinking</a>
+                    <a href="https://huggingface.co/spaces/Yves-Tana/Stock_500" target="_blank" rel="noreferrer">Stock 500</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── CONTACT ───────────────────────────────────────────── -->
+        <section id="contact" class="section contact-section">
+            <div class="section-label mono">05 — Contact</div>
+            <div class="contact-layout">
+                <div class="contact-left">
+                    <h2>On travaille<br>ensemble ?</h2>
+                    <p>
+                        Je suis disponible pour des projets en développement web,
+                        intégration IA, ou mise en ligne d'outils data.
+                        N'hésitez pas à m'écrire directement.
+                    </p>
+                </div>
+                <div class="contact-right">
+                    <a href="mailto:yvestanaassiga@yahoo.fr" class="contact-email">
+                        yvestanaassiga@yahoo.fr
+                        <span class="contact-arrow">→</span>
+                    </a>
+                    <div class="contact-profiles">
+                        <a href="https://huggingface.co/Yves-Tana/spaces" target="_blank" rel="noreferrer" class="profile-link">
+                            <span class="mono">Hugging Face</span>
+                            <span>↗</span>
+                        </a>
+                        <a href="https://share.streamlit.io/user/yves-1996" target="_blank" rel="noreferrer" class="profile-link">
+                            <span class="mono">Streamlit</span>
+                            <span>↗</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="site-footer">
-        <p>&copy; 2026 Yves TANA ASSIGA</p>
-        <p>Yaoundé, Cameroun</p>
+        <span class="mono">© 2026 Yves TANA ASSIGA</span>
+        <span class="mono footer-loc">📍 Yaoundé, Cameroun</span>
     </footer>
+
+    <script>
+        // Mobile menu
+        const toggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle?.addEventListener('click', () => {
+            const open = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', String(!open));
+            navLinks.classList.toggle('open', !open);
+        });
+
+        // Staggered reveal on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.08 });
+
+        document.querySelectorAll(
+            '.tl-item, .proj-card, .skill-area, .about-layout, .contact-layout'
+        ).forEach((el, i) => {
+            el.style.setProperty('--delay', `${i * 60}ms`);
+            observer.observe(el);
+        });
+
+        // Cursor glow (desktop only)
+        if (window.matchMedia('(pointer: fine)').matches) {
+            const glow = document.createElement('div');
+            glow.className = 'cursor-glow';
+            document.body.appendChild(glow);
+            document.addEventListener('mousemove', e => {
+                glow.style.left = e.clientX + 'px';
+                glow.style.top  = e.clientY + 'px';
+            });
+        }
+    </script>
 </body>
 </html>
